@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seudo element</title>
+    <style>
+        p::first-letter{
+            color: #a52a2a;
+            font-size: 100px;
+        }
+        p::first-line{
+            color: #6433e2;
+        }
+        p::after{
+            content: "-hello words";
+            color: #7fffd4;
+        }
+        p::before{
+            content: "-hello words";
+            color: #d03bad
+        }
+        p::selection{
+            background-color: #41e256;
+            color: #000000
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, sit. Doloremque cumque rem aspernatur vel aperiam illo quidem in sed quas quis neque suscipit corrupti repellat molestias, nostrum dolores! Iure!</p>
+</body>
+</html>
