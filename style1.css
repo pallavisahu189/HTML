@@ -1,0 +1,40 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+    animation-name: colorchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    
+}
+
+@keyframes colorchange{
+    0%{
+        background-color: rgb(198, 41, 41);
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: rgb(194, 194, 19);
+        top: 0px;
+        left: 200px;
+    }
+    50%{
+        background-color: rgb(37, 195, 26);
+        top: 200px;
+        left: 200px;
+    }
+    75%{
+        background-color: rgb(53, 44, 150);
+        top: 200px;
+        right: 200px;
+    }
+    100%{
+        background-color: rgb(247, 55, 205);
+        top: 0px;
+        left: 0px;
+    }
+    
+}
