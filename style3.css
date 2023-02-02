@@ -1,0 +1,32 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    position: relative;
+    animation: timingfunction 8s linear 2s infinite reverse;
+}
+
+     @keyframes timingfunction{
+        0%{ background-color: blue;
+            top: 0px;
+            left: 0px;
+    }
+    25%{ background-color: rgb(14, 188, 14);
+        top: 0px;
+        left: 200px;
+}
+50%{
+        background-color: yellow;
+        top: 200px;
+        left: 200px;
+}
+75%{
+        background-color: rgb(137, 32, 109);
+        top: 200px;
+        right: 200px;
+}
+100%{
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+}
