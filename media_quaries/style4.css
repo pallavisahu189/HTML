@@ -1,0 +1,51 @@
+<!--media quaries page ke size ko screen ke according change krna-->
+
+
+@media(max-width:600px){
+    body{
+        background-color: brown;
+    }
+    div::after{
+        content:'This is mobile compatible';
+    }
+    
+}
+@media(max-width:600px){
+    body{
+        background-color: #a52a95;
+    }
+    div::after{
+        content:'This is portrait tablet and big phone';
+    }
+    
+}
+@media(min-width:768px){
+    body{
+        background-color: #3312a0;
+    }
+    div::after{
+        content:'This is tablets screen';
+    }
+    
+}
+@media(min-width:992px){
+    body{
+        background-color: #59b12a;
+    }
+    div::after{
+        content:'This is laptop screen';
+    }
+    
+}
+@media(min-width:1200px){
+    body{
+        background-color: #2aa1b1;
+    }
+    div::after{
+        content:'This is larger screen';
+    }
+}
+div{
+    text-align: center;
+    font-size: x-large;
+}
