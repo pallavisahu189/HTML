@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .text{
+            align-items: center;
+        }
+        .text-one{
+            align-items: center;
+        }
+        .text-two{
+            align-items: center;
+            }
+            .text-three{
+                align-items: center;
+            }
+            .text-four{
+                align-items: center;
+            }
+        
+        
+        @media screen (max-width: 1440px){
+            .conatiner{
+                display: flex;
+                flex-direction: column;;
+            }
+        }
+       
+        @media screen and (min-width: 1024px) AND (max-width: 1440px){
+            .text-one{
+                display: flex;
+                background-color: #19eea7;
+            }
+            .text{
+                display: none;
+            }
+            .text-two{
+                display: none;
+            }
+            .text-three{
+                display: none;
+            }
+            .text-four{
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text">This is media query demo page.</h1>
+    <h1 class="text one">This is media query demo page. <br> Screen size: 1440px</h1>
+    <h1 class="text two">This is media query demo page. <br> Screen size: 1024px</h1>
+    <h1 class="text three">This is media query demo page. <br> Screen size: 768px</h1>
+    <h1 class="text four">This is media query demo page. <br> Screen size: 425px</h1>
+</body>
+</html>
