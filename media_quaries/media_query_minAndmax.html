@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query with min and max</title>
+    <style>
+        @media screen and (min-width:425px) and (max-width: 768px){
+    body {
+        background-color: #eb1c1c;
+        text-align: center;
+    }
+    .laptop_large {
+    display: none;
+  }
+  .laptop {
+    display: none;
+  }
+}
+
+@media screen and (min-width:766px) and (max-width: 1024px){
+    body {
+        background-color: #341ceb;
+        text-align: center;
+    }
+   
+    .mobile {
+    display: none;
+  }
+
+  .laptop_large {
+    display: none;
+  }
+}
+@media screen and (min-width:1025px) and (max-width: 1440px){
+    body {
+        background-color: #116f04;
+        text-align: center;
+    }
+    .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+}
+    </style>
+</head>
+<body>
+    <h1>This is a Media Query demo page.</h1>
+
+    <p class="laptop_large">Screen size : 1440px</p>
+    <p class="laptop">Screen size : 1024px</p>
+    <p class="tablet">Screen size : 768px</p>
+    <p class="mobile">Screen size : 425px</p>
+</body>
+</html>
